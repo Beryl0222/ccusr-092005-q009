@@ -1,0 +1,7 @@
+{
+  "project": "馆藏研究结论发布链",
+  "records": [
+    {"id": "artifact-compass-figure", "kind": "artifact", "period": "南宋", "excavated_in": "抚州临川", "features": ["支轴磁针", "竖直盘面"]},
+    {"id": "claim-dry-compass", "kind": "research_claim", "statement": "旱罗盘使用年代可上溯至十二世纪", "evidence": ["器物结构", "出土年代", "文献对照"]}
+  ]
+}
