@@ -1,7 +1,182 @@
 {
   "project": "馆藏研究结论发布链",
-  "records": [
-    {"id": "artifact-compass-figure", "kind": "artifact", "period": "南宋", "excavated_in": "抚州临川", "features": ["支轴磁针", "竖直盘面"]},
-    {"id": "claim-dry-compass", "kind": "research_claim", "statement": "旱罗盘使用年代可上溯至十二世纪", "evidence": ["器物结构", "出土年代", "文献对照"]}
+  "evidence": [
+    {
+      "id": "ev-feature-pivot",
+      "kind": "artifact_feature",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "陶俑手中附有支轴与磁针残件，呈轴承式磁针结构",
+      "recorded_by": "藏品保管部",
+      "recorded_at": "1985-07-10"
+    },
+    {
+      "id": "ev-feature-dial",
+      "kind": "artifact_feature",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "俑座带有竖直方位盘面，盘面刻二十四向",
+      "recorded_by": "藏品保管部",
+      "recorded_at": "1985-07-10"
+    },
+    {
+      "id": "ev-excavation-linchuan-1985",
+      "kind": "excavation_context",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "1985年出土于江西抚州临川一座南宋纪年墓，墓主下葬于嘉定四年（1211年）",
+      "site": "江西抚州临川",
+      "tomb_date": "1211"
+    },
+    {
+      "id": "ev-exam-1990-xray",
+      "kind": "examination_record",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "1990年X射线检测：支轴根部影像与俑身陶胎重叠，当时判读为整体烧成",
+      "exam_no": "JC-1990-013",
+      "exam_at": "1990-04-22",
+      "note": "受限于早期成像精度，未识别后期修复接口"
+    },
+    {
+      "id": "ev-exam-2026-adhesive",
+      "kind": "examination_record",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "2026年显微观察：支轴根部检出近代合成胶粘剂残留与二次打磨痕",
+      "exam_no": "JC-2026-007",
+      "exam_at": "2026-03-02"
+    },
+    {
+      "id": "ev-exam-2026-solder",
+      "kind": "examination_record",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "2026年成分分析：支轴金属含二十世纪焊料成分，判定为1950年代修复补配件",
+      "exam_no": "JC-2026-011",
+      "exam_at": "2026-03-09"
+    },
+    {
+      "id": "ev-citation-shilin-guangji",
+      "kind": "literature_citation",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "陈元靓《事林广记》卷十一载指南鱼、指南龟装置，所述支轴式磁针形制与本俑配件相似",
+      "work": "事林广记",
+      "juan": "卷十一",
+      "circa": "1320年代"
+    },
+    {
+      "id": "ev-citation-pingzhou-ketan",
+      "kind": "literature_citation",
+      "claim_ids": ["claim-dry-compass"],
+      "summary": "朱彧《萍洲可谈》记1099年前后广州海舶“舟师识地理，夜则观星，昼则观日，阴晦观指南针”，所据为水浮磁针，非旱罗盘",
+      "work": "萍洲可谈",
+      "circa": "1119年成书"
+    },
+    {
+      "id": "ev-view-pan-1997",
+      "kind": "researcher_view",
+      "claim_ids": ["claim-dry-compass"],
+      "author": "潘其樟（馆内研究员，化名）",
+      "interpretation_id": "int-song-dry-compass",
+      "summary": "1997年主张：支轴磁针与竖直盘面系原器，结合南宋纪年墓，旱罗盘使用年代可上溯至十二世纪",
+      "recorded_at": "1997-05-20"
+    },
+    {
+      "id": "ev-view-panel-2026",
+      "kind": "researcher_view",
+      "claim_ids": ["claim-dry-compass"],
+      "author": "馆藏器物复核小组",
+      "interpretation_id": "int-pivot-restoration",
+      "summary": "2026年主张：支轴为1950年代修复补配，陶俑不能作为十二世纪旱罗盘实物；文献中的支轴式装置最早只见于十四世纪",
+      "recorded_at": "2026-03-02"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-dry-compass",
+      "statement": "旱罗盘在中国的使用年代",
+      "interpretations": [
+        {
+          "id": "int-song-dry-compass",
+          "label": "南宋旱罗盘说",
+          "summary": "现存陶俑支轴磁针为原器，旱罗盘十二世纪已在中国使用",
+          "opened_at": "1997-05-20"
+        },
+        {
+          "id": "int-pivot-restoration",
+          "label": "支轴后世补配说",
+          "summary": "支轴为1950年代修复构件，本俑不能证明十二世纪已有旱罗盘，支轴式装置文献证据不早于十四世纪",
+          "opened_at": "2026-03-02"
+        }
+      ]
+    }
+  ],
+  "conclusions": [
+    {
+      "id": "rev-dry-compass-v1",
+      "claim_id": "claim-dry-compass",
+      "version": 1,
+      "status": "confirmed",
+      "wording": {
+        "public": "旱罗盘至迟在十二世纪的南宋时期已在中国使用，此陶俑所附支轴磁针即为实物证据。",
+        "note": "1997年馆藏研究综述结论，长期用于展签与课程资料。"
+      },
+      "basis": [
+        "ev-feature-pivot",
+        "ev-feature-dial",
+        "ev-excavation-linchuan-1985",
+        "ev-exam-1990-xray",
+        "ev-citation-shilin-guangji",
+        "ev-view-pan-1997"
+      ],
+      "rationale": "依据支轴磁针结构、南宋纪年墓年代与早期X光判读，认定器物与结论相互印证。",
+      "origin": "review",
+      "created_by": "周睦学（1997年学术委员会召集人，化名）",
+      "created_at": "1997-06-01T09:00:00+08:00"
+    }
+  ],
+  "channels": [
+    {
+      "id": "ch-school",
+      "name": "学校课程资料",
+      "required_stages": ["peer_review", "editorial_board"],
+      "emergency_stages": ["editorial_board"]
+    },
+    {
+      "id": "ch-website",
+      "name": "博物馆官网",
+      "required_stages": ["peer_review", "curatorial_committee"],
+      "emergency_stages": ["duty_curator_approval"]
+    },
+    {
+      "id": "ch-loan",
+      "name": "外借展览·临川县文化馆",
+      "required_stages": ["host_confirmation"],
+      "emergency_stages": ["host_confirmation"]
+    }
+  ],
+  "publications": [
+    {
+      "channel_id": "ch-website",
+      "revision_id": "rev-dry-compass-v1",
+      "version": 1,
+      "label": "旱罗盘至迟在十二世纪的南宋时期已在中国使用，此陶俑所附支轴磁针即为实物证据。",
+      "approver": "周睦学",
+      "published_at": "1997-08-01T10:00:00+08:00",
+      "kind": "publication"
+    },
+    {
+      "channel_id": "ch-school",
+      "revision_id": "rev-dry-compass-v1",
+      "version": 1,
+      "label": "南宋（十二世纪）时，中国人已经使用旱罗盘，该陶俑是现存最早的实物证据。",
+      "approver": "教材编审组",
+      "published_at": "1997-09-01T08:00:00+08:00",
+      "kind": "publication"
+    },
+    {
+      "channel_id": "ch-loan",
+      "revision_id": "rev-dry-compass-v1",
+      "version": 1,
+      "label": "十二世纪南宋旱罗盘陶俑（复制品展签）。",
+      "approver": "外借项目组",
+      "published_at": "2002-05-01T09:30:00+08:00",
+      "kind": "publication"
+    }
   ]
 }
